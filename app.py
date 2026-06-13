@@ -13,10 +13,10 @@ def main():
         page_icon= "https://i.ibb.co/YTYGn5qV/logo.png"
     )
     
-    if 'login-type' not in st.session_state:
-        st.session_state['login-type'] = None
+    if 'login_type' not in st.session_state:
+        st.session_state['login_type'] = None
 
-    match st.session_state['login-type']:
+    match st.session_state['login_type']:
         case 'teacher':
             teacher_screen()
         case 'student':
